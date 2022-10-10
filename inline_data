@@ -26,8 +26,7 @@ with open(md_file) as f:
 
 for f in Path(resource_dir).glob("*"):
     mime_type, _ = mimetypes.guess_type(f)
-    res_name = f"_resources/{f.name}"
-    regex = re.compile(f"(\\./)?{res_name}")
+    regex = re.compile(f"(\\./)?{f}")
     with f.open("rb") as data_file:
         file_data = regex.sub(
             f"data:{mime_type};base64,"+
