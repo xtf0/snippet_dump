@@ -26,3 +26,19 @@ if [ "$MOD_TIME" -gt "$LAST_UPDATE_CHECK" ]; then
 fi
 
 date +%s > last_update_check
+
+exit
+diff output
+Only in versions/3.13.7: 3RD_PARTY_LICENSES
+diff -r versions/3.13.6/CHANGELOG versions/3.13.7/CHANGELOG
+11a12,16
+> ## Server Release 3.13.7 22 June 2022
+> 
+> ### Changed
+> - New embedded default license is valid until the 1st of July 2027
+> 
+Only in versions/3.13.7: files
+Only in versions/3.13.7: query_ip_allowlist.txt
+Only in versions/3.13.7: query_ip_denylist.txt
+Only in versions/3.13.7: ssh_host_rsa_key
+Binary files versions/3.13.6/ts3server and versions/3.13.7/ts3server differ
